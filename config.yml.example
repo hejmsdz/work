@@ -1,0 +1,18 @@
+clockify:
+  api_key: # get it from https://clockify.me/user/settings
+  workspace_id: # go to https://clockify.me/workspaces, click "settings" and copy ID from the URL
+jira:
+  host: # yourcompany.atlassian.net
+  username: # basically your work email
+  token: # create on https://id.atlassian.com/manage-profile/security/api-tokens
+tempo:
+  token: # create on https://yourcompany.atlassian.net/plugins/servlet/ac/io.tempo.jira/tempo-app#!/configuration/api-integration
+options:
+  task_keywords:
+    # if your Clockify time entry starts with a keyword,
+    # it will be assigned to the specified task
+    mytask: AB-435
+  default_accounts:
+    # choose an account to assign your worklogs by default,
+    # by Jira project key
+    AB: 000-00-0000-0000-00
